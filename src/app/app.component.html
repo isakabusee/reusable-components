@@ -1,4 +1,4 @@
 <h1>Hello Isaac</h1> <br>
 <button (click)="onClick()">Save</button> <br>
 
-<favorite></favorite>
+<favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChange()"></favorite>
