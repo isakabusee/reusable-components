@@ -1,6 +1,13 @@
-<span 
+<!-- <span 
 class="glyphicon"
 [class.glyphicon-star]="isSelected"
 [class.glyphicon-star-empty]="!isSelected"
 (click)="onClick()"
->glyphicon(no longer supported in this version of bootstrap)</span>
+>glyphicon(no longer supported in this version of bootstrap)</span> -->
+
+<button type="button" class="btn btn-primary" 
+[class.btn-primary]="isSelected"
+[class.btn-secondary]="!isSelected"
+(click)="onClick()"
+>Press</button>
+<!-- <span class="label label-default">Default</span> -->
