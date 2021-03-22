@@ -28,3 +28,12 @@
 <div [hidden]="courses.length > 0">
     No courses yet
 </div>
+
+<ul class="nav nav-pills">
+    <li active="active"><a href="">Map View</a></li>
+    <li><a href="">List View</a></li>
+</ul>
+<div [ngSwitch]="viewMode">
+    <div>Map View Content</div>
+    <div>List View Content</div>
+</div>
